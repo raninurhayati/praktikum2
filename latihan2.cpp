@@ -1,28 +1,28 @@
-#include <iostream>
+#include<iostream>
 
 using namespace std;
 
-int main()
-{
-    int A,B,C,D;
-    cout<<"MASUKAN BILANGAN 1: ";
-    cin>> A;
-    cout<<"MASUKAN BILANGAN 2: ";
-    cin>> B;
-    cout<<"MASUKAN BILANGAN 3: ";
-    cin>> C;
-    cout<<"MASUKAN BIANGAN 4: ";
-    cin>> D;
+int main() {
+    int A, B, C;
 
-    if (A>B && A>C && A>D) cout << "bilangan terbesar =" << A << endl;
-    else
+    cout << "Masukkan bilang 1: ";
+    cin >> A;
 
-    if (B>A && B>C && B>D) cout << "bilangan terbesar =" << B << endl;
+    cout << "Masukkan bilang 2: ";
+    cin >> B;
 
-    else {
-        if (C>A && C>B && C>D) cout << "bilangan terbesar =" << C << endl;
+    cout << "Masukkan bilang 3: ";
+    cin >> C;
+
+    if (A > B) {
+        if (A > C)
+            cout << "Bilangan terbesar adalah: " << A << endl;
         else
-            cout << "bilangan terbesar =" << D;
+            cout << "Bilangan terbesar adalah: " << C << endl;
+    } else {
+        if (B > C)
+            cout << "Bilangan terbesar adalah: " << B << endl;
+        else
+            cout << "Bilangan terbesar adalah: " << C << endl;
     }
 }
-
