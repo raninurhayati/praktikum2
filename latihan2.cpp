@@ -3,26 +3,29 @@
 using namespace std;
 
 int main() {
-    int A, B, C;
+    int A, B, C, D;
 
-    cout << "Masukkan bilang 1: ";
+    cout << "Masukkan bilangan 1 (A): ";
     cin >> A;
 
-    cout << "Masukkan bilang 2: ";
+    cout << "Masukkan bilangan 2 (B): ";
     cin >> B;
 
-    cout << "Masukkan bilang 3: ";
+    cout << "Masukkan bilangan 3 (C): ";
     cin >> C;
 
-    if (A > B) {
-        if (A > C)
-            cout << "Bilangan terbesar adalah: " << A << endl;
-        else
-            cout << "Bilangan terbesar adalah: " << C << endl;
-    } else {
-        if (B > C)
-            cout << "Bilangan terbesar adalah: " << B << endl;
-        else
-            cout << "Bilangan terbesar adalah: " << C << endl;
-    }
+    cout << "Masukkan bilangan 4 (D): ";
+    cin >> D;
+
+    if (A > B && A > C && A > D)
+        cout << "Bilangan terbesar adalah: " << A << endl;
+
+    if (B > C && B > A && B > D)
+        cout << "Bilangan terbesar adalah: " << B << endl;
+
+    if (C > A && C > B && C > D)
+        cout << "Bilangan terbesar adalah: " << C << endl;
+
+    if (D > A && D > B && D > C)
+        cout << "Bilangan terbesar adalah: " << D << endl;
 }
